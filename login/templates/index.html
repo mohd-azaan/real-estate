@@ -1,0 +1,177 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block head %}
+   <title>About Us</title>
+{% endblock head %}
+
+
+{% block body %}
+
+<!-- about section starts  -->
+
+<section class="about">
+
+   <div class="row">
+      <div class="image">
+         <img src="{% static 'images/about-img.svg' %}" alt="">
+      </div>
+      <div class="content">
+         <h3>why choose us?</h3>
+         <p> Welcome to our world of real estate excellence, where we turn dreams into addresses and properties into homes</p>
+         <a href="{% url 'contact' %}" class="inline-btn">contact us</a>
+      </div>
+   </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- steps section starts  -->
+
+<section class="steps">
+
+   <h1 class="heading">3 simple steps</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <img src="{% static 'images/step-1.png' %}" alt="">
+         <h3>search property</h3>
+         <p></p>
+      </div>
+
+      <div class="box">
+         <img src="{% static 'images/step-2.png' %}" alt="">
+         <h3>contact agents</h3>
+         <p></p>
+      </div>
+
+      <div class="box">
+         <img src="{% static 'images/step-3.png' %}" alt="">
+         <h3>enjoy property</h3>
+         <p></p>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- steps section ends -->
+
+<!-- review section starts  -->
+
+<section class="reviews">
+
+   <h1 class="heading">client's reviews</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <div class="user">
+            <img src="{% static 'images/pic-1.png' %}" alt="">
+            <div>
+               <h3>Ibrahim</h3>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+               </div>
+            </div>
+         </div>
+         <p>Great job by the team IMF codes</p>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="{% static 'images/pic-2.png' %}" alt="">
+            <div>
+               <h3>Aysha</h3>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  
+               </div>
+            </div>
+         </div>
+         <p>Enjoyed this platform.</p>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="{% static 'images/pic-3.png' %}" alt="">
+            <div>
+               <h3>Furqan</h3>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+               </div>
+            </div>
+         </div>
+         <p>Amazing guys this functions and UI is just Amazing.</p>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="{% static 'images/pic-4.png' %}" alt="">
+            <div>
+               <h3>Mehraj unnisa</h3>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+               </div>
+            </div>
+         </div>
+         <p>I just loved this website and explored many sites.</p>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="{% static 'images/pic-5.png' %}" alt="">
+            <div>
+               <h3>Abdul Muqsith</h3>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+               </div>
+            </div>
+         </div>
+         <p>A secured and well maintained site.</p>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="{% static 'images/pic-6.png' %}" alt="">
+            <div>
+               <h3>Noorien Sir.</h3>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+               </div>
+            </div>
+         </div>
+         <p>Great!!!</p>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- review section ends -->
+{% endblock body %}

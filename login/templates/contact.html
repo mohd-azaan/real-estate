@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block head %}
+   <title>Contact Us</title>
+{% endblock head %}
+
+{% block body %}
+
+<!-- contact section starts  -->
+
+<section class="contact">
+
+   <div class="row">
+      <div class="image">
+         <img src="{% static 'images/contact-img.svg' %}" alt="">
+      </div>
+      <form action="" method="post">
+         {% csrf_token %}
+         <h3>get in touch</h3>
+         <input type="text" name="name" required maxlength="50" placeholder="enter your name" class="box">
+         <input type="email" name="email" required maxlength="50" placeholder="enter your email" class="box">
+         <input type="number" name="number" required maxlength="10" max="9999999999" min="0" placeholder="enter your number" class="box">
+         <textarea name="message" placeholder="enter your message" required maxlength="1000" cols="30" rows="10" class="box"></textarea>
+         <input type="submit" value="send message" name="send" class="btn">
+      </form>
+   </div>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- faq section starts  -->
+
+<section class="faq" id="faq">
+
+   <h1 class="heading">FAQ</h1>
+
+   <div class="box-container">
+
+      <div class="box active">
+         <h3><span>how to cancel booking?</span><i class="fas fa-angle-down"></i></h3>
+         <p>Anytime you can cancel the booking very easily just providing the reason.</p>
+      </div>
+
+      <div class="box active">
+         <h3><span>when will I get the possession?</span><i class="fas fa-angle-down"></i></h3>
+         <p> Immediately you will get.</p>
+      </div>
+
+      <div class="box">
+         <h3><span>where can I pay the rent?</span><i class="fas fa-angle-down"></i></h3>
+         <p>You should pay by cash to the owner.</p>
+      </div>
+
+      <div class="box">
+         <h3><span>how to contact with the buyers?</span><i class="fas fa-angle-down"></i></h3>
+         <p> Through the site and thier contact detail.</p>
+      </div>
+
+      <div class="box">
+         <h3><span>why my listing not showing up?</span><i class="fas fa-angle-down"></i></h3>
+         <p> You should go to my list.</p>
+      </div>
+
+      <div class="box">
+         <h3><span>how to promote my listing?</span><i class="fas fa-angle-down"></i></h3>
+         <p>Adding in the list.</p>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- faq section ends -->
+
+
+<!-- custom js file link  -->
+<script src="{% static 'js/script.js' %}"></script>
+
+{% endblock body %}
